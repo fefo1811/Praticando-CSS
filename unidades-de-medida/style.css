@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container_cabecalho, .container_principal, .container_rodape {
+    text-align: center;
+}
+
+.container_cabecalho {
+    height: 6rem;
+    border-bottom: 1px black solid;
+}
+
+.container_cabecalho > h1 {
+    padding: 1rem;
+}
+
+.container_cabecalho > p {
+    margin-bottom: 0.5rem;
+}
+
+.container_principal {
+    margin-top: 1.5rem;
+}
+
+.container_principal > h2 {
+    padding-bottom: 0.5rem;
+}
+
+.container_principal > p {
+    margin-bottom: 1.5rem;
+}
+
+img {
+    width: 30%;
+}
