@@ -1,0 +1,94 @@
+* { /* limpando formatações padrão */
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 1em;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	background: #e6e6e6;
+}
+
+/* -------- Início da estilização do Header -------- */
+.container-cabecalho {
+	background: #f7b600;
+	padding: 1rem;
+	text-align: center;
+}
+
+h1 {
+	color: #4e4e4e;
+	font-size: 2.5em;
+}
+
+.branco {
+	color: white;
+}
+
+ul:has(a) { /* Aplica estilização no elemento <ul> que possuir o elemento-filho <a> */
+	display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(5, 100px);
+    justify-content: center;
+    list-style-type: none;
+    padding-top: 0.5rem;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+	padding: 1rem;
+}
+
+a:hover {
+	background: #ffffff;
+	color: #f7b600;
+}
+
+/* -------- Fim da estilização do Header -------- */
+
+
+/* -------- Início da estilização do Main -------- */
+.container-principal {
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 70px;
+	row-gap: 20px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.container-post {
+	background: #fff;
+	width: 57.5rem;
+	margin-left: 20px;
+}
+
+.container-lateral {
+	background: #fff;
+	width: 20rem;
+}
+
+	/* -------- Início da estilização das Postagens -------- */
+	.postagem {
+		padding: 20px;
+	}
+
+	.postagem > span {
+		display: block;
+	}
+	/* -------- Fim da estilização das Postagens -------- */
+
+/* -------- Fim da estilização do Main -------- */
+
+
+
+
+/* -------- Início da estilização do Footer -------- */
+footer { /* Isso vai fazer com que o footer sobreponha a segunda coluna, podendo ocupar toda a estela de uma ponta a outra. */
+	grid-column: 1 / span 2; 
+	background: #ccc;
+	padding: 2rem;
+	text-align: center;
+}
+/* -------- Fim da estilização do Footer -------- */
