@@ -34,16 +34,27 @@ ul:has(a) { /* Aplica estilização no elemento <ul> que possuir o elemento-filh
     padding-top: 0.5rem;
 }
 
+
 a {
 	text-decoration: none;
+	color: #f7b600;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.container-cabecalho a {
 	color: #ffffff;
 	padding: 1rem;
 }
 
-a:hover {
+.container-cabecalho a:hover {
 	background: #ffffff;
 	color: #f7b600;
+	text-decoration: none;
 }
+
 
 /* -------- Fim da estilização do Header -------- */
 
@@ -53,7 +64,7 @@ a:hover {
 	display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 70px;
-	row-gap: 20px;
+	row-gap: 3.5rem;
     align-items: center;
     margin-top: 15px;
 }
@@ -64,9 +75,38 @@ a:hover {
 	margin-left: 20px;
 }
 
+.alinhamento-grid {
+	grid-row: 2;
+}
+
 .container-lateral {
-	background: #fff;
 	width: 20rem;
+	align-self: start;
+	justify-self: center;
+}
+
+.conteudo-lateral {
+	background: #fff;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.conteudo-lateral h3 {
+	color: #565656;
+	background: #CCC;
+	padding: 5px;
+}
+
+.postagem-lateral {
+	font-size: 0.8em;
+	padding: 5px;
+	border-bottom: 1px solid #CCC;
+}
+
+.categorias {
+	display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 	/* -------- Início da estilização das Postagens -------- */
@@ -77,7 +117,17 @@ a:hover {
 	.postagem > span {
 		display: block;
 	}
+
+	h2 {
+		color: #f7b600;
+	}
+
+	.data-postagem {
+		font-size: 0.8em;
+		padding-bottom: 10px;
+	}
 	/* -------- Fim da estilização das Postagens -------- */
+
 
 /* -------- Fim da estilização do Main -------- */
 
