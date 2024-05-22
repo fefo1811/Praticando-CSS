@@ -1,34 +1,41 @@
-
 ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    width: 720px;
+    background: #159cb0 url(./img/fundo-horizontal.png) repeat-x;
+    float: left;
+}
+
+ul li {
+    float: left
 }
 
 ul a {
-    width: 200px;
-    height: 40px;
     display: block;
-    color: #000;
+    padding: 0 2em;
+    line-height: 2.2em;
     text-decoration: none;
-    text-indent: 40px;
-    line-height: 40px;
-    background: #f7b600 url(./img/menu.png) no-repeat left ;
+    color: #fff;
+    background: url(./img/divisor.png) repeat-y;
 }
 
-a:hover {
-    background-position: right ;
-    color: #fff;
+ul .primeiro a {
+    background: none;
+}
+
+ul a:hover {
+    color: #085662;
+    background: #44cade;
 }
 
 /* Marcando a página onde o usuário está */
-#home .home a,
+#home #navegacao .home a,
 #sobre .sobre a,
 #servicos .servicos a,
 #contato .contatos a,
 #noticias .noticias a
 { /* Nesse caso, o próprio CSS trata de verificar qualç página o usuário está com base na ID disponível no documento para poder aplicar a estilização */
-    background-position: right;
-    background-color: #f99200;
+    background-position: right ;
     color: #fff;
 }
