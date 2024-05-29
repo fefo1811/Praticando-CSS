@@ -1,0 +1,32 @@
+body {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+table {
+    width: 33%;
+    border-collapse: collapse; /* Normalmente as bordas dos elementos da tabela vem separadas. O valor collapse tira o espaçamento entre as bordas e junta as bordas */
+}
+
+th, td {
+    padding: 7px;
+}
+
+th {
+    text-transform: uppercase;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #111;
+    text-align: left;
+    letter-spacing: 0.1em; /* Adiciona um espaçamento entre as letras */
+}
+
+tr.alternado {
+    background: #efefef;
+}
+
+.numero {
+    text-align: right;
+}
+
+tr:hover {
+  background: #c3e6e5;  
+}
