@@ -120,6 +120,22 @@ h2 {
     color: #fff;
 }
 
+h3 {
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+.destaque h3{
+    background-color: #b10333;
+    color: #fff;
+}
+
+.entrevista h3{
+    background-color: #de003e;
+}
+
 .menu-lateral ul a {
     font-size: 0.9em;
     padding: 3px;
@@ -154,6 +170,40 @@ input[type=submit] {
     color: #fff;
     background: #b10333;
     border: 2px solid #870529;
+}
+
+img {
+    border: 2px solid #dfdfdf;
+}
+
+.lista-noticias li {
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 65px;
+}
+
+.lista-noticias li a img{
+    float: left;
+    margin: 5px;
+}
+
+.lista-noticias li a {
+    text-decoration: none;
+}
+
+.lista-noticias li a h3 {
+    font-size: 0.8em;
+    padding: 0;
+    color: #3e7ab9;
+}
+
+.lista-noticias li a p {
+    font-size: 0.7em;
+}
+
+.lista-noticias li:hover {
+    background: #eee;
+    cursor: pointer;
 }
 
 .container-rodape {
