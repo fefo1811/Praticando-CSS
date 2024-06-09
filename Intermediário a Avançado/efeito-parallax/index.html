@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Efeito Parallax </title>
+
+    <style>
+        /* Configuração padrão */
+        body, html {
+            margin: 0;
+            font: 16px "Lato", sans-serif;
+            color: #777;
+            height: 100%;
+        }
+        /* Fim configurações padrões */
+
+        .conteudo {
+            color: #777;
+            background-color: white;
+            text-align: justify;
+            padding: 50px 80px;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            color: #111;
+            text-align: center;
+        }
+
+        /* Início Efeito Parallax */
+        .caixa1, .caixa2, .caixa3, .caixa4 {
+            opacity: 0.7;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .caixa1 {
+            background-image: url(./imagens/imagem1.jpg);
+        }
+
+        .caixa2 {
+            background-image: url(./imagens/imagem2.jpg);
+        }
+
+        .caixa3 {
+            background-image: url(./imagens/imagem3.jpg);
+        }
+
+        .caixa4 {
+            background-image: url(./imagens/imagem4.jpg);
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa1"></div>
+
+    <div class="conteudo">
+        <h3> Parallax </h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum error necessitatibus voluptas eveniet nobis, magnam perferendis similique velit dolorum aut dicta earum pariatur laudantium doloribus nulla, ducimus accusantium assumenda ipsam.
+            Impedit aliquam corporis, accusamus voluptatum officia autem ipsam reprehenderit laboriosam. Pariatur similique ullam quia iusto unde dignissimos, quaerat dolores asperiores corporis harum aperiam sed voluptates illum officiis sint aut error.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus error ratione et blanditiis! Vel, at facilis repellendus perspiciatis inventore rem incidunt nemo ipsum, nesciunt commodi dolores! Pariatur repellendus libero maxime!
+            Fugiat neque doloribus ipsum vel libero rem at dicta incidunt. Molestiae laboriosam tenetur incidunt facilis cumque repudiandae doloremque, alias consectetur veniam, est labore saepe voluptatum. Mollitia porro quia id nesciunt!
+            Architecto enim fuga delectus, ea voluptatibus esse modi quas temporibus fugiat, blanditiis quam velit illum. Fuga aut accusamus, dicta quos quo laboriosam sint, eveniet cum culpa quibusdam deleniti! Ad, ullam!
+        </p>
+    </div>
+
+    <div class="caixa2">
+        Caixa 2
+    </div>
+
+    <div class="conteudo">
+        <h3> Felipe </h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum error necessitatibus voluptas eveniet nobis, magnam perferendis similique velit dolorum aut dicta earum pariatur laudantium doloribus nulla, ducimus accusantium assumenda ipsam.
+            Impedit aliquam corporis, accusamus voluptatum officia autem ipsam reprehenderit laboriosam. Pariatur similique ullam quia iusto unde dignissimos, quaerat dolores asperiores corporis harum aperiam sed voluptates illum officiis sint aut error.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus error ratione et blanditiis! Vel, at facilis repellendus perspiciatis inventore rem incidunt nemo ipsum, nesciunt commodi dolores! Pariatur repellendus libero maxime!
+            Fugiat neque doloribus ipsum vel libero rem at dicta incidunt. Molestiae laboriosam tenetur incidunt facilis cumque repudiandae doloremque, alias consectetur veniam, est labore saepe voluptatum. Mollitia porro quia id nesciunt!
+            Architecto enim fuga delectus, ea voluptatibus esse modi quas temporibus fugiat, blanditiis quam velit illum. Fuga aut accusamus, dicta quos quo laboriosam sint, eveniet cum culpa quibusdam deleniti! Ad, ullam!
+        </p>
+    </div>
+
+    <div class="caixa3">
+        Caixa 3 
+    </div>
+
+    <div class="caixa4">
+        Caixa 4
+    </div>
+</body>
+</html>
