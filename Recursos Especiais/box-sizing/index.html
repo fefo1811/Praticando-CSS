@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Border-radius e Box-sizing </title>
+    <link rel="stylesheet" href="../normalize-css/normalize.css"> <!-- Aplicando normalize -->
+
+    <style>
+        #caixa {
+            width: 300px;
+            height: 300px;
+            background: #b9c941;
+            padding: 20px;
+            margin: 10px;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            /* -webkit-border-radius: 10px 50px 80px 100px; Da ponta esquerda superior para a direita superior, da direita inferior para a esquerda inferior */
+            /* -moz-border-radius: 10px 50px 80px 100px; */
+        }
+
+        #caixa2 {
+            width: 200px;
+            height: 200px;
+            background: #b9c941;
+            margin: 10px;
+            padding: 50px;
+            border-radius: 10px 50px 80px 100px; /* Da ponta esquerda superior para a direita superior, da direita inferior para a esquerda inferior */
+        }
+
+        .arredondamento {
+            border-radius: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="caixa">
+        <h1> Título da Caixa </h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, deleniti quasi aliquid at facere illum voluptas. Suscipit unde aspernatur neque beatae, molestiae laborum commodi fuga laboriosam vero dolor itaque saepe! </p>
+    </div>
+
+    <div id="caixa2">
+        <h1> Título da Caixa </h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, deleniti quasi aliquid at facere illum voluptas. Suscipit unde aspernatur neque beatae, molestiae laborum commodi fuga laboriosam vero dolor itaque saepe! </p>
+    </div>
+
+    <!-- <img src="./imagens/perfil.jpg" width="300" height="300" class="arredondamento"> -->
+    <!-- Para melhor arredondar uma imagem que não é redonda, é sempre importante a imagem possuir uma ALTURA igual a LARGURA -->
+</body>
+</html>
