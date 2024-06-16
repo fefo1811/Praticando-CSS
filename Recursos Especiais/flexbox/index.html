@@ -7,16 +7,23 @@
     <link rel="stylesheet" href="../normalize-css/normalize.css"> <!-- Aplicando normalize -->
 
     <style>
-        #conteudo {
+        /* #conteudo {
             background: #dcdcdc;
             height: 400px;
             display: flex;
             /* row | row-reverse | column | column-reverse */
-            flex-direction: row;
+            /* flex-direction: row; */
             /* wrap | nowrap | wrap-reverse */
-            flex-wrap: nowrap;
-            justify-content: space-around;
-            align-items: baseline;
+            /* flex-wrap: nowrap; */
+            /* justify-content: space-around; */
+            /* align-items: baseline; */
+        /* }*/ 
+
+        #conteudo {
+            background: #dcdcdc;
+            height: 600px;
+            display: flex;
+
         }
 
         .item {
@@ -25,14 +32,30 @@
             background: #ffffff;
             border: 1px solid grey;
             margin: 10px;
+            /* Define a proporção de espaço ocupado por um flex-item */
+            flex-grow: 0;
+            flex-wrap: wrap;
         }
+
+        .item1 {
+            flex-grow: 1;
+        }
+
+        .item2 {
+            flex-grow: 2;
+        }
+
+        .ordem {
+            order: 1;
+        }
+
     </style>
 </head>
 <body>
     <h1> Flexbox </h1>
     <div id="conteudo">
-        <div class="item"> 01 </div>
-        <div class="item"> 02 </div>
+        <div class="item item1"> 01 </div>
+        <div class="item item2"> 02 </div>
         <div class="item"> 03 </div>
         <div class="item"> 04 </div>
     </div>
