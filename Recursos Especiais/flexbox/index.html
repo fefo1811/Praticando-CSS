@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flexbox </title>
+    <link rel="stylesheet" href="../normalize-css/normalize.css"> <!-- Aplicando normalize -->
+
+    <style>
+        #conteudo {
+            background: #dcdcdc;
+            height: 400px;
+            display: flex;
+            /* row | row-reverse | column | column-reverse */
+            flex-direction: row;
+            /* wrap | nowrap | wrap-reverse */
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: baseline;
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background: #ffffff;
+            border: 1px solid grey;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Flexbox </h1>
+    <div id="conteudo">
+        <div class="item"> 01 </div>
+        <div class="item"> 02 </div>
+        <div class="item"> 03 </div>
+        <div class="item"> 04 </div>
+    </div>
+
+    <div>
+
+    </div>
+</body>
+</html>
