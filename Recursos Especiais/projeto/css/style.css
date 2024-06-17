@@ -6,7 +6,6 @@ body {
 #container {
     width: 1080px;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 a:link, a:active, a:visited {
@@ -18,13 +17,18 @@ a:hover {
     color: #227115;
 }
 
-/* Estilização Header */
+/* Início Estilização Header */
+
 #container #logo a {
     width: 248px;
     height: 21px;
     text-indent: -9999px;
     display: block;
     background: url(../img/logo.png) no-repeat;
+}
+
+#container #logo h1 {
+    float: left;
 }
 
 #container header {
@@ -52,4 +56,74 @@ a:hover {
 #container nav ul a:hover {
     border-bottom: 1px solid #535858;
 }
-/* Estilização Header */
+/* Fim Estilização Header */
+
+/* Início Estilização Conteúdo */
+#principal #conteudo {
+    width: 710px;
+    float: left;
+}
+/* Fim Estilização Conteúdo */
+
+/* Início Estilização Barra Lateral */
+#principal aside {
+    width: 350px;
+    float: right;
+    background: #ebe7dd;
+    padding-bottom: 30px;
+}
+
+#principal aside #visita {
+    background: #cdc8b1;
+    padding: 10px 27px 27px 27px;
+    margin-top: 10px;
+}
+
+#principal aside h4 {
+    color: #86521a;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    margin-bottom: 0;
+}
+
+#principal aside #visita input {
+    height: 20px;
+    width: 80px;
+    background: #fff;
+    border: none;
+    font-size: 1em;
+}
+
+#principal aside #visita form input.campo {
+    border: 1px solid #ada484;
+}
+
+#principal aside #visita form input.botao {
+    background: #9b9871;
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    font-size: 1.2em;
+}
+
+#principal aside #visita fieldset {
+    border: none;
+}
+
+#principal aside #galeria {
+    padding: 0 27px 0 27px;
+}
+
+#principal aside #galeria a {
+    display: block;
+    background: url(../img/fundo-foto.png) no-repeat;
+    float: left;
+    padding: 17px 15px 17px 15px;
+    margin: 10px 0 0 20px;
+}
+
+#principal aside #galeria img {
+    margin-left: 2px;
+    margin-top: 3px;
+}
+/* Fim Estilização Barra Lateral */
