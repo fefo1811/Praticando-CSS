@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Media-queries </title>
+    <!-- Media-types -->
+
+    <!-- <link rel="stylesheet" media="screen" href="estilo.css"> Estilo para telas -->
+    <!-- <link rel="stylesheet" media="print" href="estilo-impressao.css"> Estilo para quando houver a impressão da tela -->
+
+    <!-- Media-queries -->
+    <style type="text/css">
+        /**
+            Utilizando min-width, é como se fosse aplicar uma determinada regra CSS A PARTIR de uma determinada largura.
+            A mesma lógica segue para min-height.
+        */
+        @media (min-width: 576px) { /* maior ou igual a 576px */
+            body {
+                background: red;
+            }
+        }
+
+        @media (min-width: 768px) { /* maior ou igual a 768px */
+            body {
+                background: purple;
+            }
+        }
+
+        @media (min-width: 992px) { /* maior ou igual a 992px */
+            body {
+                background: pink;
+            }
+        }
+
+        @media (min-width: 1200px) { /* maior ou igual a 1200px */
+            body {
+                background: violet;
+            }
+        }
+
+        @media (max-width: 575px) { /* menor ou igual a 575px */
+            body {
+                background: lightgreen;
+            }
+        }
+
+        @media (max-width: 767px) { /* maior ou igual a 768px */
+            body {
+                background: lightblue;
+            }
+        }
+    </style>
+
+    <!-- <link rel="stylesheet" href="../configurando-bootstrap/css/bootstrap.min.css"> -->
+
+</head>
+<body>
+    <p>oi</p>
+</body>
+</html>
