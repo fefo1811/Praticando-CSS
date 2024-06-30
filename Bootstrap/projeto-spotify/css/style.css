@@ -1,9 +1,23 @@
+html, body, #home {
+    height: 100%;
+}
+
 body {
     background: url(../imagens/capa.png),
                 url(../imagens/ruido.png), /* A segunda imagem irá ficar sobreposta a primeira declarada */
                 linear-gradient(50deg, #ff4169, #7c26f8);
     background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif;
 }
+
+/* TIpografia */
+h1 {
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px !important;
+    color: #fff !important;
+}
+/* TIpografia */
 
 .navbar-toggler {
     border-color: #fff !important;
@@ -21,4 +35,31 @@ body {
     width: 1px;
     margin: 12px 15px;
     background-color: #fff; 
+}
+
+.btn-custom {
+    color: white !important;
+    border-radius: 500px !important;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    -o-border-radius: 500px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+.btn-roxo {
+    background-color: #7c25f8 !important;
+}
+
+.btn-roxo:hover {
+    background-color: #6207e3 !important;
+}
+
+.btn-branco {
+    border: 2px solid #fff !important;
+}
+
+.btn-branco:hover {
+    background-color: #fff !important;
+    color: #000 !important;
 }
