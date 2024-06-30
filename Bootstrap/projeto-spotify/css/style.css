@@ -1,5 +1,6 @@
 html, body, #home {
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -7,15 +8,27 @@ body {
                 url(../imagens/ruido.png), /* A segunda imagem irá ficar sobreposta a primeira declarada */
                 linear-gradient(50deg, #ff4169, #7c26f8);
     background-attachment: fixed;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif !important;
 }
 
 /* TIpografia */
 h1 {
-    font-weight: 900;
+    font-weight: 900 !important;
     letter-spacing: -0.05em;
     margin-bottom: 50px !important;
     color: #fff !important;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 700 !important;
+    letter-spacing: -0.04em;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 700 !important;
+    letter-spacing: -0.04em;
 }
 /* TIpografia */
 
@@ -62,4 +75,37 @@ h1 {
 .btn-branco:hover {
     background-color: #fff !important;
     color: #000 !important;
+}
+
+#servicos {
+    background: #fff;
+    padding: 20px 0 20px 0;   
+}
+
+#servicos h2, h3 {
+    color: #7c25f8 !important;
+}
+
+#recursos {
+    padding: 20px 0 20px 0;   
+}
+
+#recursos h3 {
+    color: #9bf0e1 !important;
+}
+
+#recursos h2, #recursos p {
+    color: #fff !important;
+}
+
+.albuns {
+    padding: 10px 0 10px 0;
+}
+
+.rotacionar {
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    padding-left: 80px;
 }
