@@ -4,3 +4,21 @@ body {
                 linear-gradient(50deg, #ff4169, #7c26f8);
     background-attachment: fixed;
 }
+
+.navbar-toggler {
+    border-color: #fff !important;
+}
+
+.navbar-transparente {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #9bf0e1 !important;
+}
+
+.divisor {
+    width: 1px;
+    margin: 12px 15px;
+    background-color: #fff; 
+}
